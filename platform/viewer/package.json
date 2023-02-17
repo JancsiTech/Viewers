@@ -46,7 +46,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@babel/runtime": "7.18.3",
+    "@babel/runtime": "^7.20.13",
     "@ohif/core": "^2.16.35",
     "@ohif/extension-cornerstone": "^2.12.16",
     "@ohif/extension-debugging": "^0.3.3",
@@ -76,6 +76,7 @@
     "moment": "^2.24.0",
     "oidc-client": "1.7.x",
     "prop-types": "^15.7.2",
+    "react-dates": "^21.8.0",
     "react-dropzone": "^10.1.7",
     "react-i18next": "^10.11.0",
     "react-redux": "^7.1.0",
@@ -88,8 +89,7 @@
     "redux-oidc": "3.1.x",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "vtk.js": "^11.14.0",
-    "react-dates": "21.2.1"
+    "vtk.js": "^11.14.0"
   },
   "devDependencies": {
     "antd": "^5.0.7",
