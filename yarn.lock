@@ -850,14 +850,21 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@7.18.3":
+  version "7.18.3"
+  resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+  integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
   version "7.5.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.5", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.5", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.7", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.6":
   version "7.20.13"
   resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
   integrity sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==
@@ -1054,7 +1061,7 @@
 
 "@emotion/hash@0.8.0", "@emotion/hash@^0.8.0":
   version "0.8.0"
-  resolved "https://registry.npmmirror.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
+  resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
 "@emotion/is-prop-valid@^1.1.0":
@@ -1097,7 +1104,7 @@
 
 "@emotion/unitless@0.7.5", "@emotion/unitless@^0.7.4", "@emotion/unitless@^0.7.5":
   version "0.7.5"
-  resolved "https://registry.npmmirror.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
 "@emotion/utils@0.11.3":
@@ -2292,6 +2299,69 @@
   dependencies:
     "@types/node" "^12.11.1"
 
+"@ohif/core@^2.16.35":
+  version "2.16.35"
+  resolved "https://registry.npmmirror.com/@ohif/core/-/core-2.16.35.tgz#5d723540957c0c673a5424d5ba1d2749b97a1bd4"
+  integrity sha512-egnNB74nEJq2TFUOdF9Fbb8YewG6LiMxipf1s312a9Jw8FPkslIXylYWtD1TMW7+dKUqXVn557PL47WfX6BuJw==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    ajv "^6.10.0"
+    dcmjs "0.29.3"
+    dicomweb-client "^0.8.3"
+    immer "9.0.12"
+    isomorphic-base64 "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.merge "^4.6.1"
+    mathjs "^10.1.0"
+    mousetrap "^1.6.3"
+    retry "^0.12.0"
+    validate.js "^0.12.0"
+
+"@ohif/extension-cornerstone@^2.12.16":
+  version "2.12.16"
+  resolved "https://registry.npmmirror.com/@ohif/extension-cornerstone/-/extension-cornerstone-2.12.16.tgz#c1bdb503f26c79c44f0f3a224315a61b9352aa30"
+  integrity sha512-p7ptspwU2VcY0KeHPj3XPkkLjdv0n+6PC5YDKfjWv3xt8Pe7PfzzovnfnIAdV5PPyp07yZNG52uCIP5EvJ7eGA==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    classnames "^2.2.6"
+    lodash.merge "^4.6.2"
+    lodash.throttle "^4.1.1"
+    react-cornerstone-viewport "4.1.1"
+
+"@ohif/extension-dicom-html@^1.3.24":
+  version "1.3.24"
+  resolved "https://registry.npmmirror.com/@ohif/extension-dicom-html/-/extension-dicom-html-1.3.24.tgz#7c5150eb6d8f699cce93d964875ba4e32122c5a0"
+  integrity sha512-LOgXYMvfzD58AzG/zZ9rJl43vkoDeZJUPYR9IFaaO8QvFfqclUHaYn5Im2TmADRQYxGEm727NQpAcgzELzBtWQ==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+
+"@ohif/extension-dicom-rt@^0.7.14":
+  version "0.7.14"
+  resolved "https://registry.npmmirror.com/@ohif/extension-dicom-rt/-/extension-dicom-rt-0.7.14.tgz#5aeb99288f3209fa2a553eb299a30f5b5d49c55e"
+  integrity sha512-K5aW/tHzEvuG9D8N5H0zidi/v06tOB8WSpcWp0LHR1GMLxk7FZegPv9/F6VjrjoqNgBPTdY34ZwQdjIABxshNQ==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    react-select "^3.0.8"
+
+"@ohif/extension-dicom-segmentation@^0.7.21":
+  version "0.7.20"
+  resolved "https://registry.npmmirror.com/@ohif/extension-dicom-segmentation/-/extension-dicom-segmentation-0.7.20.tgz#f386cff46232cf982b8247d99c689d67c43c2ff2"
+  integrity sha512-XgnjKQsCLIFe3UOzwxTzYGCAMazp6m0ckpKTynLktiJD+6HVitiZq1k6g8KOBcMfFRyzUzVymic5808b7h87dg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    gl-matrix "^3.3.0"
+    react-select "^3.0.8"
+    react-tooltip "4.2.10"
+
+"@ohif/extension-vtk@^1.12.41":
+  version "1.12.41"
+  resolved "https://registry.npmmirror.com/@ohif/extension-vtk/-/extension-vtk-1.12.41.tgz#c64c6f66c269ef5b4fe29eff3fbf553ce15c9d0f"
+  integrity sha512-7VrC6RupdWdax6Wo4xS8icEyU3b42m1XVjEevA/qup7XQo9FR5yIPFAbnBycKfXA86B+CAom1Jan3AzAg5pSqw==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    lodash.throttle "^4.1.1"
+    react-vtkjs-viewport "^0.14.5"
+
 "@ohif/i18n@^0.2.3":
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@ohif/i18n/-/i18n-0.2.5.tgz#2b92a78109823ce0f50dd590201d980a5fd64974"
@@ -3297,7 +3367,7 @@ aproba@^1.0.3, aproba@^1.1.1:
 
 aproba@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/aproba/-/aproba-2.0.0.tgz#52520b8ae5b569215b354efc0caa3fe1e45a8adc"
+  resolved "https://registry.npmmirror.com/aproba/-/aproba-2.0.0.tgz#52520b8ae5b569215b354efc0caa3fe1e45a8adc"
   integrity sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==
 
 arch@^2.1.0:
@@ -5000,8 +5070,8 @@ console-browserify@^1.1.0:
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
-  integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
+  resolved "https://registry.npmmirror.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
+  integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 "consolidated-events@^1.1.1 || ^2.0.0":
   version "2.0.2"
@@ -5755,7 +5825,7 @@ dayjs@^1.11.1:
 
 dcmjs@0.24.10:
   version "0.24.10"
-  resolved "https://registry.yarnpkg.com/dcmjs/-/dcmjs-0.24.10.tgz#048a12a1905175763274545c17bb38b506cdfd00"
+  resolved "https://registry.npmmirror.com/dcmjs/-/dcmjs-0.24.10.tgz#048a12a1905175763274545c17bb38b506cdfd00"
   integrity sha512-kugEdBqwwTx7lqUxm4jdklkMJiQ8pZ0aqMw9WkszkDU5lDWHyq2kbRccACtcwqygC7j1d36w8uG/vNLMejeMBg==
   dependencies:
     "@babel/runtime-corejs2" "^7.17.8"
@@ -5763,6 +5833,18 @@ dcmjs@0.24.10:
     lodash.clonedeep "^4.5.0"
     loglevelnext "^3.0.1"
     ndarray "^1.0.19"
+
+dcmjs@0.29.3:
+  version "0.29.3"
+  resolved "https://registry.yarnpkg.com/dcmjs/-/dcmjs-0.29.3.tgz#e672ed079bd5371406e022361c60d7794af40d7b"
+  integrity sha512-aLAkrpejrFAatzU84ID9s01+oUFBzIP3gSkgyr2OcDfOphW7ms/JUDUdH24Y6361NaMovEo4gJ3bRrzsBmI8cA==
+  dependencies:
+    "@babel/runtime-corejs2" "^7.17.8"
+    gl-matrix "^3.1.0"
+    lodash.clonedeep "^4.5.0"
+    loglevelnext "^3.0.1"
+    ndarray "^1.0.19"
+    pako "^2.0.4"
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -5963,8 +6045,8 @@ delegates@^1.0.0:
 
 depd@~1.1.2:
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
-  integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+  resolved "https://registry.npmmirror.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
+  integrity sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==
 
 deprecation@^2.0.0:
   version "2.3.1"
@@ -13568,7 +13650,7 @@ react-cornerstone-viewport@4.1.1:
 
 react-dates@21.2.1:
   version "21.2.1"
-  resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-21.2.1.tgz#a979ed6876326ccfbf754a019bc95458cc061ad8"
+  resolved "https://registry.npmmirror.com/react-dates/-/react-dates-21.2.1.tgz#a979ed6876326ccfbf754a019bc95458cc061ad8"
   integrity sha512-jGZGQjiYur6lTvnhgQvnOLR2ACmV10LDZow3anNSAFAuKsWny3NKrnlXJ+gdRMv3amCF8TrMwsa+3cplv3OWIQ==
   dependencies:
     airbnb-prop-types "^2.15.0"
@@ -13700,7 +13782,7 @@ react-input-autosize@^2.2.2:
 
 react-is@^16.12.0, react-is@^16.3.2:
   version "16.13.1"
-  resolved "https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
@@ -13927,18 +14009,7 @@ react-with-styles-interface-css@^6.0.0:
     array.prototype.flat "^1.2.1"
     global-cache "^1.2.1"
 
-react-with-styles@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-with-styles/-/react-with-styles-4.0.1.tgz#22b5170d39769b643dd650cc183e9419650af12d"
-  integrity sha512-J77k4E2Dcm4SpfbQEet2KyRjZJtPCWD1PVkOB5vIOJewg/VEIMkb2MVVxusLTh1nwtfo7cnxY6gHytF6NcBkLQ==
-  dependencies:
-    airbnb-prop-types "^2.14.0"
-    hoist-non-react-statics "^3.2.1"
-    object.assign "^4.1.0"
-    prop-types "^15.7.2"
-    react-with-direction "^1.3.1"
-
-react-with-styles@^4.1.0:
+react-with-styles@^4.0.1, react-with-styles@^4.1.0:
   version "4.2.0"
   resolved "https://registry.npmmirror.com/react-with-styles/-/react-with-styles-4.2.0.tgz#0b8a8e5d94d082518b9f564f6fcf6103e28096c5"
   integrity sha512-tZCTY27KriRNhwHIbg1NkSdTTOSfXDg6Z7s+Q37mtz0Ym7Sc7IOr3PzVt4qJhJMW6Nkvfi3g34FuhtiGAJCBQA==

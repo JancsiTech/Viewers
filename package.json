@@ -43,7 +43,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
-    "antd": "^5.0.7",
     "core-js": "^3.2.1"
   },
   "devDependencies": {
