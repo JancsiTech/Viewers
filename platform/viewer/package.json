@@ -47,7 +47,6 @@
   },
   "dependencies": {
     "@babel/runtime": "7.18.3",
-    "react-dates": "21.2.1",
     "@ohif/core": "^2.16.35",
     "@ohif/extension-cornerstone": "^2.12.16",
     "@ohif/extension-debugging": "^0.3.3",
@@ -89,7 +88,8 @@
     "redux-oidc": "3.1.x",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "vtk.js": "^11.14.0"
+    "vtk.js": "^11.14.0",
+    "react-dates": "21.2.1"
   },
   "devDependencies": {
     "antd": "^5.0.7",
