@@ -19,7 +19,7 @@
 /* Home Page */
 .entry-header.header-big {
   background: rgba(21, 25, 30, 0.7);
-  padding:10px var(--study-list-padding);
+  padding: 35px var(--study-list-padding);
   height: auto;
   display: inline-block;
   width: 100%;
@@ -80,9 +80,6 @@
   margin: 3px 0 0 10px;
   padding: 0 0 0 10px;
   display: inline-block;
-      position: absolute;
-        width: 100px;
-        top: 10px;
 }
 
 .header-menu {
@@ -94,7 +91,6 @@
   line-height: 18px;
   text-decoration: none;
   margin-right: 10px;
-  line-height: 40px;
 }
 
 .entry-header.header-big .header-menu {
@@ -143,13 +139,4 @@
   .header-menu .research-use {
     display: none;
   }
-}
-
-
-.add-serve .dd-menu-list {
-min-width: 150px;
-}
-.add-serve .active{
-  color: #91b9cd;
-  background: #3e474c;
 }

@@ -28,13 +28,13 @@ class DropdownMenu extends Component {
   getListItems = () => {
     const { list, align } = this.props;
 
-    return list.map(({ icon, title, link, onClick, active }, key) => {
+    return list.map(({ icon, title, link, onClick }, key) => {
       if (link) {
         return (
           <a
             href={link || '#'}
             key={key}
-            className={`dd-item  ${active && 'active'}`}
+            className="dd-item"
             onClick={() => this.handleOnClick(onClick)}
           >
             {icon && <Icon {...icon} className="dd-item-icon" />}
@@ -45,7 +45,7 @@ class DropdownMenu extends Component {
         return (
           <button
             key={key}
-            className={`dd-item  ${active && 'active'}`}
+            className="dd-item"
             data-cy="dd-item-menu"
             onClick={() => this.handleOnClick(onClick)}
           >
@@ -121,7 +121,7 @@ class DropdownMenu extends Component {
   render() {
     return (
       <div
-        className={`dd-menu ${this.props.className}`}
+        className="dd-menu"
         data-cy="options-menu"
         ref={node => (this.node = node)}
       >

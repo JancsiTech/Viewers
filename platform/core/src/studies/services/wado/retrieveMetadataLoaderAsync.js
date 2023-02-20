@@ -30,12 +30,7 @@ function attachSeriesLoader(server, study, seriesLoader) {
     },
     async next() {
       const series = await seriesLoader.next();
-      await addInstancesToStudy(
-        server,
-        study,
-        series.sopInstances,
-        study.originSeriesData
-      );
+      await addInstancesToStudy(server, study, series.sopInstances);
       return study.seriesMap[series.seriesInstanceUID];
     },
   });
@@ -155,11 +150,7 @@ export default class RetrieveMetadataLoaderAsync extends RetrieveMetadataLoader 
 
     const { sopInstances, asyncLoader, seriesData } = loadData;
 
-    const study = await createStudyFromSOPInstanceList(
-      server,
-      sopInstances,
-      seriesData
-    );
+    const study = await createStudyFromSOPInstanceList(server, sopInstances);
 
     // TODO: Should this be in a helper
     const seriesDataNaturalized = seriesData.map(naturalizeDataset);

@@ -1,8 +1,3 @@
-/*
- * @Description: 
- * @Author: Devin
- * @Date: 2022-11-21 21:23:56
- */
 import user from '../user';
 
 /**
@@ -14,13 +9,7 @@ import user from '../user';
  * @param {string|function} [server.requestOptions.auth]
  * @returns {Object} { Authorization }
  */
-export default function getAuthorizationHeader({ requestOptions } = {
-  requestOptions: {
-    auth: 'orthanc:orthanc',
-  }
-}) {
-
-
+export default function getAuthorizationHeader({ requestOptions } = {}) {
   const headers = {};
 
   // Check for OHIF.user since this can also be run on the server
@@ -31,7 +20,6 @@ export default function getAuthorizationHeader({ requestOptions } = {
     if (typeof requestOptions.auth === 'function') {
       // Custom Auth Header
       headers.Authorization = requestOptions.auth(requestOptions);
-
     } else {
       // HTTP Basic Auth (user:password)
       headers.Authorization = `Basic ${btoa(requestOptions.auth)}`;
@@ -41,13 +29,6 @@ export default function getAuthorizationHeader({ requestOptions } = {
   else if (accessToken) {
     headers.Authorization = `Bearer ${accessToken}`;
   }
-  // headers['Access-Control-Allow-Origin'] = '*'
-  // headers['Access-Control-Allow-Headers'] = 'Referer,Accept,Origin,User-Agent,Authorization'
-  // headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE,OPTIONS'
-  // headers['Access-Control-Allow-Credentials'] = true
-  // headers['Access-Control-Max-Age'] = '86400'
 
   return headers;
-
-
 }

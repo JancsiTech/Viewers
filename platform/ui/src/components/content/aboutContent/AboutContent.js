@@ -14,9 +14,14 @@ const AboutContent = () => {
   const itemsPreset = () => {
     return [
       {
-        name: t('Official Website'),
-        value: 'https://www.jancsitech.net/',
-        link: 'https://www.jancsitech.net/',
+        name: t('Repository URL'),
+        value: 'https://github.com/OHIF/Viewers/',
+        link: 'https://github.com/OHIF/Viewers/',
+      },
+      {
+        name: t('Latest Master Commits'),
+        value: 'https://github.com/OHIF/Viewers/commits/master',
+        link: 'https://github.com/OHIF/Viewers/commits/master',
       },
       {
         name: 'Version Number',
@@ -54,7 +59,7 @@ const AboutContent = () => {
 
   return (
     <div className="AboutContent" data-cy="about-modal">
-      {/* <div className="btn-group">
+      <div className="btn-group">
         <a
           className="btn btn-default"
           target="_blank"
@@ -81,7 +86,7 @@ const AboutContent = () => {
         >
           {t('More details')}
         </a>
-      </div> */}
+      </div>
       <div>
         <h3>{t('Version Information')}</h3>
         <table className="table table-responsive">

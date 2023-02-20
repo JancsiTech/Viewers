@@ -1,8 +1,3 @@
-/*
- * @Description: 
- * @Author: Deven
- * @Date: 2022-11-21 21:26:11
- */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -17,19 +12,16 @@ function TabFooter({
   onCancel,
   hasErrors,
   t = translate,
-  isShowReset = true
 }) {
   return (
     <div className="footer">
-
-      {isShowReset ? <button
+      <button
         className="btn btn-danger pull-left"
         data-cy="reset-default-btn"
         onClick={onResetPreferences}
-
       >
         {t('Reset to Defaults')}
-      </button> : <div className="pull-left"></div>}
+      </button>
       <div>
         <div
           onClick={onCancel}

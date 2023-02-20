@@ -95,6 +95,7 @@ class ViewerLocalFileData extends Component {
   render() {
     const onDrop = async acceptedFiles => {
       this.setState({ loading: true });
+
       const studies = await filesToStudies(acceptedFiles);
       const updatedStudies = this.updateStudies(studies);
 

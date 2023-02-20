@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import OHIF from '@ohif/core';
 import { withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { servicesManager } from '../App';
 import {
   StudyList,
   PageToolbar,
@@ -57,7 +56,6 @@ function StudyListRoute(props) {
   const [rowsPerPage, setRowsPerPage] = useState(25);
   const [pageNumber, setPageNumber] = useState(0);
   const appContext = useContext(AppContext);
-  const { UINotificationService } = servicesManager.services;
   // ~~ RESPONSIVE
   const displaySize = useMedia(
     [
@@ -101,13 +99,7 @@ function StudyListRoute(props) {
           setSearchStatus({ error: null, isSearchingForStudies: false });
         } catch (error) {
           console.warn(error);
-          setSearchStatus({ error: null, isSearchingForStudies: false });
-          UINotificationService.show({
-            title: 'Error Message Prompt',
-            message: 'Service unavailable，please Switch server',
-            type: 'error',
-            autoClose: true,
-          });
+          setSearchStatus({ error: true, isFetching: false });
         }
       };
 

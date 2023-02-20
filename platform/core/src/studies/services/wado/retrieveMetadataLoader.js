@@ -22,9 +22,7 @@ export default class RetrieveMetadataLoader {
   async execLoad() {
     await this.configLoad();
     const preLoadData = await this.preLoad();
-
     const loadData = await this.load(preLoadData);
-
     const postLoadData = await this.posLoad(loadData);
 
     return postLoadData;

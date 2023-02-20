@@ -1,8 +1,3 @@
-/*
- * @Description:
- * @Author: Devin
- * @Date: 2022-11-21 21:23:57
- */
 import { connect } from 'react-redux';
 import Viewer from './Viewer.js';
 import OHIF from '@ohif/core';
@@ -16,19 +11,10 @@ const getActiveServer = servers => {
 
 const mapStateToProps = state => {
   const { viewports, servers } = state;
-
   return {
     viewports: viewports.viewportSpecificData,
     activeViewportIndex: viewports.activeViewportIndex,
     activeServer: getActiveServer(servers),
-    activeImage:
-      JSON.stringify(viewports.viewportSpecificData) !== '{}'
-        ? viewports.viewportSpecificData[0].frameIndex
-        : 0,
-    currentSeries:
-      JSON.stringify(viewports.viewportSpecificData) !== '{}'
-        ? viewports.viewportSpecificData[0].SeriesInstanceUID
-        : '',
   };
 };
 
@@ -43,6 +29,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-const ConnectedViewer = connect(mapStateToProps, mapDispatchToProps)(Viewer);
+const ConnectedViewer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Viewer);
 
 export default ConnectedViewer;

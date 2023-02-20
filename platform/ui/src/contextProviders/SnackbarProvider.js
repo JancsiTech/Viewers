@@ -30,7 +30,6 @@ const SnackbarProvider = ({ children, service }) => {
 
   const [count, setCount] = useState(1);
   const [snackbarItems, setSnackbarItems] = useState([]);
-
   const show = useCallback(
     options => {
       if (!options || (!options.title && !options.message)) {
@@ -57,6 +56,21 @@ const SnackbarProvider = ({ children, service }) => {
     },
     [count, DEFAULT_OPTIONS]
   );
+  useEffect(() => {
+    const onLogHandler = ({ type, notify, title, message }) => {
+      if (notify) {
+        show({ type, title, message });
+      }
+    };
+
+    LogManager.subscribe(LogManager.EVENTS.OnLog, onLogHandler);
+
+    return () => {
+      LogManager.unsubscribe(LogManager.EVENTS.OnLog, onLogHandler);
+    };
+  }, [show]);
+
+
 
   const hide = useCallback(
     id => {
